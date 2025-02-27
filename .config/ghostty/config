@@ -1,0 +1,26 @@
+# FONT
+theme = tokyonight_night
+
+# FONT
+font-family = JetBrains Mono
+font-size = 14
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
+
+# CURSOR
+shell-integration-features = no-cursor
+cursor-style-blink = true
+
+background-opacity = 0.85
+gtk-titlebar = false
+background-blur-radius = 50
+window-padding-x = 25
+window-padding-y = 25
+adjust-cell-height = 15%
+
+window-colorspace = display-p3
+clipboard-read = allow
+window-save-state = always
+mouse-hide-while-typing = true
+# custom-shader = path/to/.glsl --file

@@ -2,7 +2,7 @@
 theme = GruvboxDarkHard 
 
 # FONT
-font-family = SF Pro
+font-family = SF Mono Bold
 font-size = 18
 font-feature = -calt
 font-feature = -liga
@@ -10,7 +10,7 @@ font-feature = -dlig
 
 # CURSOR
 shell-integration-features = no-cursor
-cursor-style-blink = true
+cursor-style-blink = false
 
 background-opacity = 0.85
 gtk-titlebar = false

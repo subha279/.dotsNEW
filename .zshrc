@@ -105,3 +105,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+export QT_QPA_PLATFORM=xcb

@@ -74,7 +74,7 @@ alias rm='rm -iv'
 alias grep='grep --color=auto'
 # get error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
-alias penv="source ~/Coding\ and\ Notes/Python/bin/activate"
+alias penv="source ~/Coding\ and\ Notes/Deeplearning/Codes/venv/bin/activate"
 
 # Shell integrations
 eval "$(fzf --zsh)"

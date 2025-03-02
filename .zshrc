@@ -74,6 +74,7 @@ alias rm='rm -iv'
 alias grep='grep --color=auto'
 # get error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
+alias penv="source ~/Coding\ and\ Notes/Python/bin/activate"
 
 # Shell integrations
 eval "$(fzf --zsh)"
@@ -90,19 +91,7 @@ export MANPAGER="nvim +Man!"
 # Starship
 eval "$(starship init zsh)"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/subha/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/subha/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/subha/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/subha/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
+# Nvidia support for CUDA
 export QT_QPA_PLATFORM=xcb
+export PATH=/opt/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH

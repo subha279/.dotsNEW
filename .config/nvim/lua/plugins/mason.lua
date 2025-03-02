@@ -40,8 +40,6 @@ return {
 				"isort", -- python formatter
 				"black", -- python formatter
 				"clang-format", -- C formantter
-        "mypy",
-        "ruff",
 			},
 		})
 	end,

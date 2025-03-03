@@ -2,7 +2,7 @@
 theme = GruvboxDarkHard 
 
 # FONT
-font-family = SF Mono Bold
+font-family = SF Mono
 font-size = 18
 font-feature = -calt
 font-feature = -liga

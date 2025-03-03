@@ -28,30 +28,21 @@ return {
 			"                                                !#@?                                                ",
 		}
 
-		-- Set menu
-		dashboard.section.buttons.val = {
-			dashboard.button("e", "   New File", "<cmd>ene<CR>"),
-			dashboard.button("q", "   Quit NVIM", "<cmd>qa<CR>"),
-			{ type = "padding", val = 1 },
+		-- Remove menu (empty buttons section)
+		dashboard.section.buttons.val = {}
+
+		-- Set footer
+		dashboard.section.footer.val = {
+			"",
+			"",
+			"The lower you go,",
+			"The more amusing it gets...",
+			"Just kidding.",
+			"You only go insane 󰈸",
 		}
+		dashboard.section.footer.opts.hl = "String"
 
-		vim.api.nvim_create_autocmd("User", {
-			pattern = "LazyVimStarted",
-			callback = function()
-				local stats = require("lazy").stats()
-				local count = (math.floor(stats.startuptime * 100) / 100)
-
-				dashboard.section.footer.opts.hl = "GAF1"
-
-				dashboard.section.footer.val = {
-					"",
-					"󱐋 " .. stats.loaded .. " plugins loaded in " .. count .. " ms",
-				}
-
-				pcall(vim.cmd.AlphaRedraw)
-			end,
-		})
-
+		-- Apply the configuration
 		alpha.setup(dashboard.opts)
 	end,
 }

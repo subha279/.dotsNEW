@@ -16,7 +16,7 @@ background-opacity = 0.85
 gtk-titlebar = false
 background-blur-radius = 50
 window-padding-x = 25
-window-padding-y = 25
+window-padding-y = 5
 adjust-cell-height = 15%
 
 window-colorspace = display-p3

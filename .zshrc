@@ -74,7 +74,9 @@ alias rm='rm -iv'
 alias grep='grep --color=auto'
 # get error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
-alias penv="source ~/Coding\ and\ Notes/Deeplearning/Codes/.venv/bin/activate"
+# Conda env activate and deactivate
+alias condaa="source ~/anaconda3/bin/activate"
+alias condad="conda deactivate"
 
 # Shell integrations
 eval "$(fzf --zsh)"
@@ -95,3 +97,6 @@ eval "$(starship init zsh)"
 export QT_QPA_PLATFORM=xcb
 export PATH=/opt/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
+
+# Anaconda 
+export PATH="$HOME/anaconda3/bin:$PATH"

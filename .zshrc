@@ -72,6 +72,7 @@ alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -iv'
 alias grep='grep --color=auto'
+alias merge='xrdb -merge ~/.Xresources'
 # get error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 # Conda env activate and deactivate

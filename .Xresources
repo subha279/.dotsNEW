@@ -1,0 +1,38 @@
+
+! Settings
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: true
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcdfilter
+
+! Background & Foreground
+*.background: #282828
+*.foreground: #ebdbb2
+*.cursorColor: #ebdbb2
+
+! Gruvbox Dark Colors
+*.color0:  #282828   ! Black (dark)
+*.color1:  #cc241d   ! Red
+*.color2:  #98971a   ! Green
+*.color3:  #d79921   ! Yellow
+*.color4:  #458588   ! Blue
+*.color5:  #b16286   ! Magenta
+*.color6:  #689d6a   ! Cyan
+*.color7:  #a89984   ! White (light gray)
+
+! Bright Colors
+*.color8:  #928374   ! Bright Black (gray)
+*.color9:  #fb4934   ! Bright Red
+*.color10: #b8bb26   ! Bright Green
+*.color11: #fabd2f   ! Bright Yellow
+*.color12: #83a598   ! Bright Blue
+*.color13: #d3869b   ! Bright Magenta
+*.color14: #8ec07c   ! Bright Cyan
+*.color15: #ebdbb2   ! Bright White
+
+! For my laptop screen
+!Xft.dip: 141
+! For my monitor
+Xft.dpi: 92

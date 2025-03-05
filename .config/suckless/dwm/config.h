@@ -24,11 +24,12 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "SF Mono:style:regular:size=10" };
 static const char dmenufont[]       = "SF Mono:style:regular:size=10" ;
-static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-};
+#include "/home/subha/.cache/wal/colors-wal-dwm.h"
+//static const char *colors[][3]      = {
+//	/*               fg         bg         border   */
+//	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+//	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+//};
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
@@ -89,7 +90,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0";/* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[]   = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[]   = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", "-nf", "-sb", "-sf", NULL };
 static const char *termcmd[]    = { "ghostty", NULL };
 static const char *flameshot[]  = { "flameshot","gui", NULL };
 static const char *browser[]    = { "zen-browser", NULL };
@@ -164,6 +165,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {1} }, 
 };
 
 /* button definitions */

@@ -99,5 +99,8 @@ export QT_QPA_PLATFORM=xcb
 export PATH=/opt/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
 
+# Pywal
+(cat ~/.cache/wal/sequences &)
+
 # Anaconda 
 export PATH="$HOME/anaconda3/bin:$PATH"

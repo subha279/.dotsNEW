@@ -1,9 +1,6 @@
 # FONT
-theme = GruvboxDarkHard 
-
-# FONT
 font-family = SF Mono
-font-size = 18
+font-size = 15
 font-feature = -calt
 font-feature = -liga
 font-feature = -dlig
@@ -12,12 +9,12 @@ font-feature = -dlig
 shell-integration-features = no-cursor
 cursor-style-blink = false
 
-background-opacity = 0.85
+background-opacity = 0.8
 gtk-titlebar = false
 background-blur-radius = 50
 window-padding-x = 25
 window-padding-y = 5
-adjust-cell-height = 15%
+adjust-cell-height = 35%
 
 window-colorspace = display-p3
 clipboard-read = allow

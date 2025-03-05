@@ -6,23 +6,23 @@
 interval=0
 
 # load colors
-. ~/.dots/Scripts/Bar/bar_themes/gruvbox
+. ~/.dots/Scripts/Bar/bar_themes/colors
 
 battery() {
   get_capacity="$(cat /sys/class/power_supply/BAT1/capacity)"
-  printf "^c$black^ ^b$green^  $get_capacity%% 󰁹 "
+  printf "^c$white^ ^b$black^  $get_capacity%% 󰁹 "
 }
 
 wlan() {
 	case "$(cat /sys/class/net/wl*/operstate 2>/dev/null)" in
-	up) printf "^c$black^ ^b$green^ 󰤨 ^d^%s" " ^c$green^Connected" ;;
-	down) printf "^c$black^ ^b$green^ 󰤭 ^d^%s" " ^c$green^Disconnected" ;;
+	up) printf "^c$white^ ^b$black^ 󰤨 ^d^%s" " ^c$white^Connected" ;;
+	down) printf "^c$white^ ^b$black^ 󰤭 ^d^%s" " ^c$white^Disconnected" ;;
 	esac
 }
 
 clock() {
-	printf "^c$black^ ^b$green^ 󱑆 "
-	printf "^c$black^^b$green^ $(date '+%I:%M %p')"
+	printf "^c$white^ ^b$black^ 󱑆 "
+	printf "^c$white^^b$black^ $(date '+%I:%M %p')"
 }
 
 while true; do

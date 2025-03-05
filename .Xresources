@@ -33,6 +33,6 @@ Xft.lcdfilter: lcdfilter
 *.color15: #ebdbb2   ! Bright White
 
 ! For my laptop screen
-!Xft.dip: 141
+Xft.dip: 141
 ! For my monitor
-Xft.dpi: 92
+!Xft.dpi: 92

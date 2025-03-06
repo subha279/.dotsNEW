@@ -12,8 +12,12 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
 keymap.set("x", "<leader>p", [["_dP]])
-keymap.set("n", "<leader>rw", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
-  { desc = "Rename Same Many Words Together In the Cursor" })
+keymap.set(
+  "n",
+  "<leader>rw",
+  [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+  { desc = "Rename Same Many Words Together In the Cursor" }
+)
 keymap.set("n", "<C-f>", "<cmd>silent !tmux neww ~/.dots/Scripts/tmux-sessionizer<CR>")
 
 -- Pane and Window Navigation
@@ -25,3 +29,6 @@ keymap.set("n", "<C-l>", "<C-w>l", opts) -- Navigate Right
 -- Window Management
 keymap.set("n", "<leader>sv", ":vsplit<CR>", opts) -- Split Vertically
 keymap.set("n", "<leader>sh", ":split<CR>", opts)  -- Split Horizontally
+
+-- make a file executable
+keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })

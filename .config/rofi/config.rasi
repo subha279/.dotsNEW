@@ -2,7 +2,7 @@
 @import "~/.config/rofi/style.rasi"
 configuration {
 	modi: "window,drun,run,ssh,filebrowser";
-	font: "SF Mono 12";
+	font: "Iosevka 12";
 	show-icons: true;
 	hide-scrollbar: true;
 	terminal: "ghostty";
